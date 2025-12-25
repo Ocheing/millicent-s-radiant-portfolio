@@ -26,8 +26,8 @@ const Index = () => {
                   alt="Millicent Anyango" 
                   className="w-full h-full object-cover transition-all duration-300"
                 />
-                {/* Teal overlay on hover */}
-                <div className="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* Teal overlay - visible by default, hidden on hover */}
+                <div className="absolute inset-0 bg-primary/60 opacity-100 group-hover:opacity-0 transition-opacity duration-300" />
               </div>
               
               <h1 
