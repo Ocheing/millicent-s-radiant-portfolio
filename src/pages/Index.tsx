@@ -18,14 +18,16 @@ const Index = () => {
             <div>
               {/* Profile Picture Frame */}
               <div 
-                className="w-24 h-24 mb-6 rounded-full border-2 border-primary/50 overflow-hidden bg-card/50 flex items-center justify-center opacity-0 animate-fade-in"
+                className="group relative w-36 h-36 mb-6 border-2 border-primary/50 overflow-hidden bg-card/50 flex items-center justify-center opacity-0 animate-fade-in transition-all duration-300 hover:border-primary"
                 style={{ animationDelay: "0.05s" }}
               >
                 <img 
-                  src="/placeholder.svg" 
+                  src="/assets/profile-image.jpeg" 
                   alt="Millicent Anyango" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-all duration-300"
                 />
+                {/* Teal overlay on hover */}
+                <div className="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               
               <h1 

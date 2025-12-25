@@ -86,6 +86,10 @@ export default {
           "0%": { opacity: "0", transform: "translateX(20px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
+        "scroll-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -93,6 +97,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out forwards",
         "fade-in-left": "fade-in-left 0.6s ease-out forwards",
         "fade-in-right": "fade-in-right 0.6s ease-out forwards",
+        "scroll-left": "scroll-left 15s linear infinite",
       },
     },
   },
