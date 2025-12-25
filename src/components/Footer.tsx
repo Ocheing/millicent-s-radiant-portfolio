@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { Home } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -10,27 +10,17 @@ export const Footer = () => {
         <span className="text-primary font-medium">Tailwind CSS</span>.
       </p>
       
-      {/* Animated scrolling portfolio showcase */}
-      <div className="overflow-hidden border-t border-border/30 pt-6">
+      {/* Animated portfolio link with bouncing icon */}
+      <div className="border-t border-border/30 pt-6">
         <a 
           href="#portfolios" 
-          className="group flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+          className="group inline-flex items-center gap-3 text-primary hover:text-primary/80 transition-colors"
         >
-          <ExternalLink className="w-4 h-4" />
-          <span className="font-medium">View All My Portfolios</span>
-        </a>
-        
-        {/* Scrolling text animation */}
-        <div className="mt-4 overflow-hidden whitespace-nowrap">
-          <div className="inline-flex animate-scroll-left">
-            <span className="text-muted-foreground/70 text-xs tracking-widest uppercase mx-4">
-              Web Development • UI/UX Design • Mobile Apps • Frontend • Backend • Full Stack • React • TypeScript • Tailwind CSS •
-            </span>
-            <span className="text-muted-foreground/70 text-xs tracking-widest uppercase mx-4">
-              Web Development • UI/UX Design • Mobile Apps • Frontend • Backend • Full Stack • React • TypeScript • Tailwind CSS •
-            </span>
+          <div className="animate-bounce-slow">
+            <Home className="w-6 h-6" />
           </div>
-        </div>
+          <span className="font-medium text-base">View All My Portfolios</span>
+        </a>
       </div>
     </footer>
   );

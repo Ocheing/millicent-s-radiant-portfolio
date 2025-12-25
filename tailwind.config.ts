@@ -90,6 +90,10 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -97,6 +101,9 @@ export default {
         "fade-in": "fade-in 0.6s ease-out forwards",
         "fade-in-left": "fade-in-left 0.6s ease-out forwards",
         "fade-in-right": "fade-in-right 0.6s ease-out forwards",
+        "scroll-left": "scroll-left 15s linear infinite",
+        "bounce-slow": "bounce-slow 1.5s ease-in-out infinite",
+      },
         "scroll-left": "scroll-left 15s linear infinite",
       },
     },
