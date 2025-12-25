@@ -1,5 +1,4 @@
 import { Spotlight } from "@/components/Spotlight";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Navigation } from "@/components/Navigation";
 import { SocialLinks } from "@/components/SocialLinks";
 import { AboutSection } from "@/components/AboutSection";
@@ -11,18 +10,29 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground relative">
       <Spotlight />
-      <ThemeToggle />
       
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">
           {/* Left Sidebar - Fixed */}
           <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
             <div>
+              {/* Profile Picture Frame */}
+              <div 
+                className="w-24 h-24 mb-6 rounded-full border-2 border-primary/50 overflow-hidden bg-card/50 flex items-center justify-center opacity-0 animate-fade-in"
+                style={{ animationDelay: "0.05s" }}
+              >
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Millicent Anyango" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
               <h1 
                 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl opacity-0 animate-fade-in"
                 style={{ animationDelay: "0.1s" }}
               >
-                <a href="/">Millicent Anyango Ochieng</a>
+                <a href="/">Millicent Anyango</a>
               </h1>
               <h2 
                 className="mt-3 text-lg font-medium tracking-tight text-foreground sm:text-xl opacity-0 animate-fade-in"
