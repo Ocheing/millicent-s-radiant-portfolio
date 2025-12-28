@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Code } from "lucide-react";
 
 const socialLinks = [
   {
@@ -12,14 +12,19 @@ const socialLinks = [
     icon: Linkedin,
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com",
-    icon: Twitter,
+    name: "Instagram",
+    url: "https://instagram.com",
+    icon: Instagram,
   },
   {
     name: "Email",
     url: "mailto:millicent@example.com",
     icon: Mail,
+  },
+  {
+    name: "CodePen",
+    url: "https://codepen.io",
+    icon: Code,
   },
 ];
 
