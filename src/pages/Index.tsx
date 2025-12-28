@@ -4,6 +4,8 @@ import { SocialLinks } from "@/components/SocialLinks";
 import { AboutSection } from "@/components/AboutSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { SkillsSection } from "@/components/SkillsSection";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -91,6 +93,20 @@ const Index = () => {
             <div 
               className="opacity-0 animate-fade-in-right"
               style={{ animationDelay: "0.6s" }}
+            >
+              <SkillsSection />
+            </div>
+            
+            <div 
+              className="opacity-0 animate-fade-in-right"
+              style={{ animationDelay: "0.7s" }}
+            >
+              <ContactSection />
+            </div>
+            
+            <div 
+              className="opacity-0 animate-fade-in-right"
+              style={{ animationDelay: "0.8s" }}
             >
               <Footer />
             </div>

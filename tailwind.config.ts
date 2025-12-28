@@ -104,8 +104,6 @@ export default {
         "scroll-left": "scroll-left 15s linear infinite",
         "bounce-slow": "bounce-slow 1.5s ease-in-out infinite",
       },
-        "scroll-left": "scroll-left 15s linear infinite",
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],
